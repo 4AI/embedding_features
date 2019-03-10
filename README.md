@@ -85,4 +85,4 @@ test_vecs = fea.transform(X_test)
 
 # License
 
-[MIT]()
+[MIT](https://github.com/4AI/embedding_features/blob/master/LICENSE)
