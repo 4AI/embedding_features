@@ -20,7 +20,7 @@ def load_data(fpath):
 
     return data, label
 
-X, y = load_data('./corpus/mpqa.txt')
+X, y = load_data('./corpus/TREC.txt')
 
 clf=SVC(kernel='rbf', verbose=True)
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)

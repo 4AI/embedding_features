@@ -4,12 +4,41 @@
 > We give a sklearn-like api that you can easily combine it with sklearn models.
 
 # Algorithms
+
 The embedding algorithms we suppoort:
 
 - [x] word2vec
 - [x] fasttext
 
 `word2vec` and `fasttext` are implemented by [gensim](https://github.com/RaRe-Technologies/gensim)
+
+## parameters
+
+### Word2vecFeature
+
+```python
+embedding_features.fasttext.Word2vecFeature (
+    n_dim=100,  # embedding size 
+    min_count=1, # min frequency of token
+    window=5,  # context window
+    n_jobs=-1,  # workers
+    pretrained_file=None,  # pretrained word2vec binary model file
+    save_file=None  # path to save trained word2vec model
+)
+```
+
+### FasttextFeature
+
+```python
+embedding_features.fasttext.FasttextFeature (
+    n_dim=100,  # embedding size 
+    min_count=1, # min frequency of token
+    window=5,  # context window
+    n_jobs=-1,  # workers
+    pretrained_file=None,  # pretrained word2vec binary model file
+    save_file=None  # path to save trained word2vec model
+)
+```
 
 # Install
 
